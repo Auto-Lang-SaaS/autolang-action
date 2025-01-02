@@ -1,0 +1,50 @@
+# Directorios y archivos generados por el compilador
+/bin/
+/pkg/
+/build/
+
+# Archivos de configuración local
+.env
+*.local
+
+# Archivos temporales y de trabajo
+*.tmp
+*.log
+*.out
+
+# Archivos de configuración de IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# Archivos de dependencias generadas por Go Modules
+vendor/
+
+# Archivos de cobertura
+coverage.out
+
+# Directorios y archivos generados por herramientas de Go
+*.test
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Archivos generados por la herramienta gofmt
+*.orig
+
+# Archivos generados por herramientas de CI/CD
+.DS_Store
+*.tar
+*.zip
+
+# Archivos específicos del sistema operativo
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+
+translation

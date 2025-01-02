@@ -1,0 +1,25 @@
+name: "Autolang"
+description: "Automatically translates files in multiple formats using AI."
+author: "Autolang SaaS"
+inputs:
+  translations-folder:
+    description: "Comma-separated list of folders containing files to translate."
+    required: true
+  base-language:
+    description: "Language to use as the base for translations."
+    required: true
+  target-languages:
+    description: "Comma-separated list of target languages."
+    required: true
+outputs:
+  result:
+    description: "Status of the translation process."
+runs:
+  using: "composite"
+  steps:
+    - name: Run Autolang Translation Script
+      run: go run main.go
+      shell: bash
+branding:
+  icon: "globe"
+  color: "blue"
