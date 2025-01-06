@@ -1,4 +1,4 @@
-name: "Autolang"
+name: "Autolang CI"
 description: "Automatically translates files in multiple formats using AI."
 author: "Autolang SaaS"
 inputs:
