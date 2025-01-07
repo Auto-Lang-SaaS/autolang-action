@@ -122,6 +122,11 @@ For example:
 
 - `index.html` -> `index.es.html`
 - `content.md` -> `content.fr.md`
+  
+  Or
+
+- `index.en.html` -> `index.es.html`
+- `content.en.md` -> `content.fr.md`
 
 ### Important Note:
 
@@ -136,10 +141,9 @@ The action ensures that translated files do not contain multiple language codes 
 1. The action reads the `translations_folder` input and processes each specified folder.
 2. It scans the files in each folder and reads their content.
 3. For each target language, it sends a request to the OpenAI API to translate the file content.
-4. The translated content is cleaned to remove any unnecessary block delimiters (```).
-5. The translated content is saved as a new file in the same directory, with a language-specific suffix added to the filename.
-6. The action removes old translated files and regenerates them to ensure they are always up-to-date.
-7. The action repeats the process for all specified folders and languages.
+4. The translated content is saved as a new file in the same directory, with a language-specific suffix added to the filename.
+5. The action removes old translated files and regenerates them to ensure they are always up-to-date.
+6. The action repeats the process for all specified folders and languages.
 
 ---
 
